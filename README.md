@@ -12,7 +12,7 @@ Add to `.repo/local_manifests/wisdom.xml`:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="sethmurphy18/android_device_samsung_wisdom" path="device/samsung/wisdom" remote="github" revision="android-9.0" />
+  <project name="eagerestwolf/android_device_samsung_wisdom" path="device/samsung/wisdom" remote="github" revision="android-9.0" />
 </manifest>
 ```
 Then run `repo sync` to check it out.
