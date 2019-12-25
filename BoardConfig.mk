@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_FOLDER := device/samsung/wisdomub
+DEVICE_FOLDER := device/samsung/wisdom
 
 # Architecture
 TARGET_ARCH := arm64
@@ -63,7 +63,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0xBE800000
 TARGET_COPY_OUT_VENDOR := vendor
 
 # Recovery
-TARGET_OTA_ASSERT_DEVICE := wisdomub
+TARGET_OTA_ASSERT_DEVICE := wisdom
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 BOARD_HAS_LARGE_FILESYSTEM := true

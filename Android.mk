@@ -24,7 +24,7 @@
 # components.
 #
 
-ifneq ($(filter wisdomub,$(TARGET_DEVICE)),)
+ifneq ($(filter wisdom,$(TARGET_DEVICE)),)
 LOCAL_PATH := $(call my-dir)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif

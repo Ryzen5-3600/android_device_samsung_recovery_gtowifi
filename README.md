@@ -8,27 +8,37 @@
 
 ## SM-P205
 
-Add to `.repo/local_manifests/wisdomub.xml`:
+Add to `.repo/local_manifests/wisdom.xml`:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="eagerestwolf/android_device_samsung_wisdomub" path="device/samsung/wisdomub" remote="github" revision="android-9.0" />
+  <project name="eagerestwolf/android_device_samsung_wisdom" path="device/samsung/wisdom" remote="github" revision="android-9.0" />
 </manifest>
 ```
 Then run `repo sync` to check it out.
+
+If you wish to get the kernel sources as well, the two can be combined:
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="eagerestwolf/android_device_samsung_wisdom" path="device/samsung/wisdom" remote="github" revision="android-9.0" />
+  <project name="eagerestwolf/andtoid_kernel_samsung_wisdom" path="kernel/samsung/wisdom" remote="github" revision="android-9.0" />
+</manifest>
+```
 
 ___
 
 To build:
 ```
 . build/envsetup.sh
-lunch omni_wisdomub-eng
+lunch omni_wisdom-eng
 make recoveryimage
 ```
 
 ___
 
-Kernel source: https://github.com/eagerestwolf/android_kernel_samsung_wisdomub/
+Kernel source: https://github.com/eagerestwolf/android_kernel_samsung_wisdom/
+Vendor sources: Coming soon!
 
 ## Maintainer Notes
 
