@@ -38,6 +38,7 @@ make recoveryimage
 ___
 
 Kernel source: https://github.com/eagerestwolf/android_kernel_samsung_wisdom/
+
 Vendor sources: Coming soon!
 
 ## Maintainer Notes
