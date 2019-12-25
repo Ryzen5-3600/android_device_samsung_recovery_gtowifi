@@ -23,7 +23,7 @@ To build:
 ```
 . build/envsetup.sh
 lunch omni_wisdomub-eng
-mka recoveryimage
+make recoveryimage
 ```
 
 ___
