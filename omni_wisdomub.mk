@@ -1,4 +1,5 @@
 # Inherit from the common Open Source product configuration
+# We inherit from the telephony base because this is an LTE tablet
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk) 
 
 # Inherit some common Lineage stuff.
@@ -8,7 +9,8 @@ $(call inherit-product, vendor/omni/config/common.mk)
 #$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)  # If you are building for a tablet
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := omni_wisdom
-PRODUCT_DEVICE := wisdom
+PRODUCT_DEVICE := wisdomub
+PRODUCT_NAME := omni_wisdomub
+PRODUCT_MODEL := SM-P205
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung

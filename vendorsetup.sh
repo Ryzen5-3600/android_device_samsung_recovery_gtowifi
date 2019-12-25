@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-add_lunch_combo omni_wisdom-eng
+add_lunch_combo omni_wisdomub-eng

@@ -25,21 +25,23 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-# <mnt_point>   <type>  <device>                                              <device2>           <flags>
-/boot           emmc    /dev/block/platform/13500000.dwmmc0/by-name/boot                          flags=backup=1
-/recovery       emmc    /dev/block/platform/13500000.dwmmc0/by-name/recovery
-/misc           emmc    /dev/block/platform/13500000.dwmmc0/by-name/misc
+# <src>                 <mnt_point>     <type>  <mnt_flags and options> <fs_mgr_flags>
+/dev/block/platform/13500000.dwmmc0/by-name/sec_efs     /efs            ext4    defaults         recoveryonly
+/dev/block/platform/13500000.dwmmc0/by-name/sec_efs     /sec_efs        ext4    defaults         recoveryonly
+/dev/block/platform/13500000.dwmmc0/by-name/boot        /boot           emmc    defaults         recoveryonly
+/dev/block/platform/13500000.dwmmc0/by-name/recovery    /recovery       emmc    defaults         recoveryonly
+/dev/block/platform/13500000.dwmmc0/by-name/cache       /cache          ext4    defaults         recoveryonly
+/dev/block/platform/13500000.dwmmc0/by-name/system      /		        ext4    defaults         recoveryonly
+/dev/block/platform/13500000.dwmmc0/by-name/userdata    /data           ext4    defaults         wait,length=-20480
+/dev/block/platform/13500000.dwmmc0/by-name/cpefs       /cpefs          ext4    defaults         recoveryonly
+/dev/block/platform/13500000.dwmmc0/by-name/misc        /misc           emmc    defaults         recoveryonly
+/dev/block/platform/13500000.dwmmc0/by-name/radio       /modem     		emmc    defaults         recoveryonly
+/dev/block/platform/13500000.dwmmc0/by-name/vendor		/vendor			ext4	default			 recoveryonly
+/dev/block/platform/13500000.dwmmc0/by-name/cp_debug    /cp_debug       emmc    default          recoveryonly
+/dev/block/mmcblk1p1                                    /sdcard         vfat    defaults         recoveryonly 
+/dev/block/platform/13500000.dwmmc0/by-name/product	    /product		ext4    defaults         recoveryonly
+/dev/block/platform/13500000.dwmmc0/by-name/param       /param          emmc    defaults         recoveryonly
 
-/efs            ext4    /dev/block/platform/13500000.dwmmc0/by-name/efs                           flags=backup=1;display="EFS"
-/system_root    ext4    /dev/block/platform/13500000.dwmmc0/by-name/system                        flags=backup=1;display="System"
-/system_image   emmc    /dev/block/platform/13500000.dwmmc0/by-name/system                        flags=backup=1;flashimg
-/vendor         ext4    /dev/block/platform/13500000.dwmmc0/by-name/vendor                        flags=backup=1
-/vendor_image   emmc    /dev/block/platform/13500000.dwmmc0/by-name/vendor                        flags=backup=1;flashimg
-/product        ext4    /dev/block/platform/13500000.dwmmc0/by-name/product                       flags=backup=1;display="Product"
-/product_image  emmc    /dev/block/platform/13500000.dwmmc0/by-name/product                       flags=backup=1;flashimg;display="Product Image"
-/cache          ext4    /dev/block/platform/13500000.dwmmc0/by-name/cache                         flags=backup=1
-/data           ext4    /dev/block/platform/13500000.dwmmc0/by-name/userdata
-
-# Removeable storage
-/external_sd    auto    /dev/block/mmcblk1p1                                  /dev/block/mmcblk1  flags=storage;wipeingui;removeable;display="Micro SD Card"
-/usb-otg        vfat    /dev/block/sda1                                       /dev/block/sda1     flags=storage;wipeingui;removeable;display="USB-OTG"
+#Auto-generated code by FOTA Portal
+/dev/block/platform/13500000.dwmmc0/by-name/dtb	/dtb	emmc	default	recoveryonly
+/dev/block/platform/13500000.dwmmc0/by-name/dtbo	/dtbo	emmc	default	recoveryonly

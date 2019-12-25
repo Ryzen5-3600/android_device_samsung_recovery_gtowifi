@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/omni_wisdom.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/omni_wisdomub.mk

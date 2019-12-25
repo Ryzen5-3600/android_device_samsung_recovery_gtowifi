@@ -1,0 +1,6 @@
+ro.hardware=samsungexynos7885
+ro.chipname=exynos7885
+ro.arch=exynos7885
+ro.boot.bootdevice=13500000.dwmmc0
+# TODO: Figure out the correct density
+ro.sf.lcd_density=420

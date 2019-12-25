@@ -8,11 +8,11 @@
 
 ## SM-P205
 
-Add to `.repo/local_manifests/wisdom.xml`:
+Add to `.repo/local_manifests/wisdomub.xml`:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="eagerestwolf/android_device_samsung_wisdom" path="device/samsung/wisdom" remote="github" revision="android-9.0" />
+  <project name="eagerestwolf/android_device_samsung_wisdomub" path="device/samsung/wisdomub" remote="github" revision="android-9.0" />
 </manifest>
 ```
 Then run `repo sync` to check it out.
@@ -28,7 +28,7 @@ make recoveryimage
 
 ___
 
-Kernel source: [Samsung Open Source](https://opensource.samsung.com/uploadSearch?searchValue=SM-P205)
+Kernel source: https://github.com/eagerestwolf/android_kernel_samsung_wisdomub/
 
 ## Maintainer Notes
 
