@@ -22,7 +22,7 @@ If you wish to get the kernel sources as well, the two can be combined:
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <project name="eagerestwolf/android_device_samsung_wisdom" path="device/samsung/wisdom" remote="github" revision="android-9.0" />
-  <project name="eagerestwolf/andtoid_kernel_samsung_wisdom" path="kernel/samsung/wisdom" remote="github" revision="android-9.0" />
+  <project name="eagerestwolf/android_kernel_samsung_wisdom" path="kernel/samsung/wisdom" remote="github" revision="android-9.0" />
 </manifest>
 ```
 
