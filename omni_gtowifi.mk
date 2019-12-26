@@ -1,5 +1,5 @@
 # Release name
-PRODUCT_RELEASE_NAME := wisdom
+PRODUCT_RELEASE_NAME := gtowifi
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk) 
@@ -11,8 +11,8 @@ $(call inherit-product, vendor/omni/config/common.mk)
 #$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)  # If you are building for a tablet
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := wisdom
-PRODUCT_NAME := omni_wisdom
-PRODUCT_MODEL := SM-P205
+PRODUCT_DEVICE := gtowifi
+PRODUCT_NAME := omni_gtowifi
+PRODUCT_MODEL := SM-T290
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
