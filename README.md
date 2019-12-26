@@ -6,7 +6,7 @@
 > endorsed by, sponsored by, or affiliated with the Team Win Recovery team
 > and/or project.
 
-## SM-P205
+## SM-T290
 
 Add to `.repo/local_manifests/gtowifi.xml`:
 ```xml
