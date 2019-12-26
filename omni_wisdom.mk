@@ -2,10 +2,13 @@
 PRODUCT_RELEASE_NAME := wisdom
 
 # Inherit from the common Open Source product configuration
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk) 
 
-# Inherit from our custom product configuration
+# Inherit some common Lineage stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
+
+# Inherit from those products. Most specific first.
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)  # If you are building for a tablet
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := wisdom
