@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_FOLDER := device/samsung/wisdom
+DEVICE_FOLDER := device/samsung/gtowifi
 
 # Architecture
 TARGET_ARCH := arm64
