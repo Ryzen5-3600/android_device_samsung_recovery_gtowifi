@@ -32,7 +32,7 @@ Vendor sources: https://github.com/secretwolf98/SM-T290_gtowifi_stock_firmware/t
 
 ## Maintainer Notes
 
-You may notice a lot of similarities bewtween this repository and the
+You may notice a lot of similarities between this repository and the
 repository for the [SM-P205](https://github.com/eagerestwolf/android_device_samsung_wisdom),
 that's no coincidence. The wisdom and gtowifi are basically the same device,
 with a different processor and a s-pen. They even have the same resolution, so I
